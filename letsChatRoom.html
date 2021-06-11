@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'sChat - A social integrated chatting website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="letsChatRoom.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Potta+One&display=swap"
+        rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <script src="letsChatRoom.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <button id="logout" class=" btn btn-danger" onclick="logout()" style="font-family: 'Poppins', sans-serif; font-size: 15px"><i class="fa fa-sign-out"></i>&nbsp;Logout</button>
+            <center>
+                <h1 class="header">	
+                    <sup>
+                        <img src="chatLogo-removebg-preview.png">
+                    </sup>
+                    Let's Chat
+                </h1>
+                <h3 class="color_white" id="display_username" style="font-family: 'Poppins', sans-serif;"></h3>
+                <div class="form-group input_div_room_page">
+                    <label for="room_name" style="font-family: 'Poppins', sans-serif;">#Add Room:</label>
+                    <br>
+                    <input type="text" name="room_name" id="room_name" class="form-control" placeholder="#RoomName"> 
+                </div>
+                <button class="btn btn-success" style="font-family: 'Poppins', sans-serif; width: 60%;">#Add Room</button>
+                <h3 class="color_white" style="font-family: 'Poppins', sans-serif;">#TRENDINGROOMS</h3>
+            
+                <div id="output" style="font-family: 'Poppins', sans-serif;"></div>
+            </center>
+    </div>
+</body>
+
+</html>

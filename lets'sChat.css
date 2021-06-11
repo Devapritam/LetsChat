@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.rightDiv {
+    height: 80%;
+    padding: 20px;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#fff, rgb(241, 163, 241));
+}
+
+.rightDiv img {
+    height: 100%;
+    width: 100%;
+}
+
+.leftDiv {
+    height: 80%;
+    padding: 20px;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background: rgb(238, 236, 236);
+}
+
+.leftDiv .details {
+    display: flex;
+    justify-content: center;
+}
+
+.leftDiv h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftDiv img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.leftDiv h1 {
+    font-family: 'Potta One', cursive;
+    font-size: 30px;
+}
+
+.leftDiv .loginDetails {
+    margin-top: 70px;
+    text-align: left;
+}
+
+.leftDiv .loginDetails label {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+.leftDiv .loginDetails input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftDiv button {
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftDiv button:focus {
+    outline: none;
+}
