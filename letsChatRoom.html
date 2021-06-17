@@ -23,7 +23,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 
-    <script src="letsChatRoom.js"></script>
+    <script src="letsChatRoom.js" defer></script>
 
 </head>
 
@@ -43,7 +43,7 @@
                     <br>
                     <input type="text" name="room_name" id="room_name" class="form-control" placeholder="#RoomName"> 
                 </div>
-                <button class="btn btn-success" style="font-family: 'Poppins', sans-serif; width: 60%;">#Add Room</button>
+                <button class="btn btn-success" style="font-family: 'Poppins', sans-serif; width: 60%;" onclick="addRoom()">#Add Room</button>
                 <h3 class="color_white" style="font-family: 'Poppins', sans-serif;">#TRENDINGROOMS</h3>
             
                 <div id="output" style="font-family: 'Poppins', sans-serif;"></div>
